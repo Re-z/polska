@@ -78,7 +78,7 @@ body { font-family: "Roboto", sans-serif; font-size: 12px; line-height: 1.4; }
 .inner { width: 1180px; margin: 0 auto; position: relative; padding: 0 10px; *zoom: 1; }
 .inner:after { content: " "; display: table; clear: both; }
 
-.header { height: 400px; background: url("../img/header-bg.jpg") center -40px no-repeat; background-size: cover; }
+.header { height: 400px; background: url("../img/header-bg.jpg") center -40px no-repeat; background-size: cover; min-width: 1180px; }
 .header__top { *zoom: 1; border-top: 1px solid transparent; }
 .header__top:after { content: " "; display: table; clear: both; }
 .header__logo { display: block; margin-top: 20px; width: 150px; height: 124px; background: url("../img/flag.png"); float: right; }
@@ -127,7 +127,7 @@ body { font-family: "Roboto", sans-serif; font-size: 12px; line-height: 1.4; }
 .recalls .slick-dots button { width: 20px; height: 20px; -webkit-box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6); box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6); }
 .recalls .slick-dots li.slick-active button { background: #D1141B; }
 
-.footer { background: black; }
+.footer { background: black; min-width: 1180px; }
 .footer .inner { padding-top: 25px; padding-bottom: 15px; }
 .footer__flag { width: 240px; height: 218px; background: url("../img/herb.gif") center center no-repeat; background-size: cover; float: left; margin-right: 50px; }
 .footer__links { float: left; *zoom: 1; }
