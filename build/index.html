@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/style.css"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   </head>
   <body>
     <!--BEGIN out-->
@@ -14,12 +15,13 @@
         <header class="header">
           <div class="inner">
             <div class="header__top"><a href="index.html" class="header__logo"></a>
-              <ul class="header__nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Трудоустройство</a></li>
-                <li><a href="#">Обучение</a></li>
-                <li><a href="#">Стоимость</a></li>
-                <li><a href="#">Контакты</a></li>
+              <ul class="nav">
+                <li><a href="#" class="nav__link">Главная</a></li>
+                <li class="nav__holder"> Трудоустройство<span class="nav__box"><a href="#" class="nav__in-link">Схема работы</a><a href="#" class="nav__in-link">Еще что-то</a><a href="#" class="nav__in-link">Еще что-то</a></span></li>
+                <li class="nav__holder"> Обучение<span class="nav__box nav__box_wide"><a href="#" class="nav__in-link">Схема работы</a><a href="#" class="nav__in-link">Еще что-то</a><a href="#" class="nav__in-link">Еще что-то</a></span></li>
+                <li><a href="#" class="nav__link">Стоимость</a></li>
+                <li><a href="#" class="nav__link">Контакты</a></li>
+                <li><a href="#" class="nav__link">Главная</a></li>
               </ul>
             </div>
             <h1 class="header__title">Praca</h1>
@@ -58,26 +60,22 @@
                     <p>p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.</p><span>Иван, 37 лет, Днепропетровск</span>
                   </div>
                 </div>
-                <div class="recalls__item">
-                  <div class="recalls__img"></div>
+                <div class="recalls__item"><img src="img/recall-2.jpg" class="recalls__img">
                   <div class="recalls__text-wrap">
                     <p>p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.</p><span>Иван, 37 лет, Днепропетровск</span>
                   </div>
                 </div>
-                <div class="recalls__item">
-                  <div class="recalls__img"></div>
+                <div class="recalls__item"><img src="img/recall-3.jpg" class="recalls__img">
                   <div class="recalls__text-wrap">
                     <p>p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.</p><span>Иван, 37 лет, Днепропетровск</span>
                   </div>
                 </div>
-                <div class="recalls__item">
-                  <div class="recalls__img"></div>
+                <div class="recalls__item"><img src="img/recall-4.jpg" class="recalls__img">
                   <div class="recalls__text-wrap">
                     <p>p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.</p><span>Иван, 37 лет, Днепропетровск</span>
                   </div>
                 </div>
-                <div class="recalls__item">
-                  <div class="recalls__img"></div>
+                <div class="recalls__item"><img src="img/recall-5.jpg" class="recalls__img">
                   <div class="recalls__text-wrap">
                     <p>p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.</p><span>Иван, 37 лет, Днепропетровск</span>
                   </div>
@@ -87,7 +85,40 @@
           </div>
         </main>
         <footer class="footer">
-          <div class="inner"></div>
+          <div class="inner">
+            <div class="footer__flag"></div>
+            <div class="footer__links">
+              <div class="footer__links-work">
+                <h6 class="footer__title">Работа</h6>
+                <ul>
+                  <li><a href="#">lorem</a></li>
+                  <li><a href="#">lorem lorem</a></li>
+                  <li><a href="#">lorem lorem lorem</a></li>
+                  <li><a href="#">loremlorem</a></li>
+                  <li><a href="#">loremlorem lorem</a></li>
+                </ul>
+              </div>
+              <div class="footer__links-study">
+                <h6 class="footer__title">Учеба</h6>
+                <ul>
+                  <li><a href="#">lorem</a></li>
+                  <li><a href="#">lorem lorem</a></li>
+                  <li><a href="#">lorem lorem lorem</a></li>
+                  <li><a href="#">loremlorem</a></li>
+                  <li><a href="#">loremlorem lorem</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <h6 class="footer__title">Контакты</h6>
+              <ul>
+                <li><i class="fa fa-phone"></i> 099 547 79 12</li>
+                <li><i class="fa fa-phone"></i> 099 547 79 12</li>
+                <li><a href="#" class="footer__skype"><i class="fa fa-skype"> </i> Skype support</a></li>
+                <li><a href="#" class="footer__vk"><i class="fa fa-vk"> </i> Vk page</a></li>
+              </ul>
+            </div>
+          </div>
         </footer>
       </div>
     </div>

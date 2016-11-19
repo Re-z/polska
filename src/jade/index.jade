@@ -9,10 +9,21 @@ block content
 			.inner
 				.header__top
 					a.header__logo(href="index.html")
-					ul.header__nav
-						- var navItems = ['Главная','Трудоустройство','Обучение', 'Стоимость', 'Контакты' ]
-						each item in navItems
-							li: a(href="#")=item
+					ul.nav
+						li: a.nav__link(href="#") Главная
+						li.nav__holder  Трудоустройство
+							span.nav__box
+								a.nav__in-link(href="#") Схема работы
+								a.nav__in-link(href="#") Еще что-то
+								a.nav__in-link(href="#") Еще что-то
+						li.nav__holder  Обучение
+							span.nav__box.nav__box_wide
+								a.nav__in-link(href="#") Схема работы
+								a.nav__in-link(href="#") Еще что-то
+								a.nav__in-link(href="#") Еще что-то
+						li: a.nav__link(href="#") Стоимость
+						li: a.nav__link(href="#") Контакты
+						li: a.nav__link(href="#") Главная
 				h1.header__title Praca
 				h2.header__subtitle Работа в Польше для украинцев
 		main.content
@@ -42,25 +53,54 @@ block content
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
 						.recalls__item
-							.recalls__img
+							img.recalls__img(src="img/recall-2.jpg")
 							.recalls__text-wrap
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
 						.recalls__item
-							.recalls__img
+							img.recalls__img(src="img/recall-3.jpg")
+
 							.recalls__text-wrap
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
 						.recalls__item
-							.recalls__img
+							img.recalls__img(src="img/recall-4.jpg")
+
 							.recalls__text-wrap
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
 						.recalls__item
-							.recalls__img
+							img.recalls__img(src="img/recall-5.jpg")
+
 							.recalls__text-wrap
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
 		footer.footer
 			.inner
+				.footer__flag
+				.footer__links
+					.footer__links-work
+						h6.footer__title Работа
+						ul
+							li: a(href="#") lorem
+							li: a(href="#") lorem lorem
+							li: a(href="#") lorem lorem lorem
+							li: a(href="#") loremlorem
+							li: a(href="#") loremlorem lorem
+					.footer__links-study
+						h6.footer__title Учеба
+						ul
+							li: a(href="#") lorem
+							li: a(href="#") lorem lorem
+							li: a(href="#") lorem lorem lorem
+							li: a(href="#") loremlorem
+							li: a(href="#") loremlorem lorem
+				.footer__contacts
+					h6.footer__title Контакты
+					ul
+						li #[i.fa.fa-phone] 099 547 79 12
+						li #[i.fa.fa-phone] 099 547 79 12
+						li: a(href="#").footer__skype #[i.fa.fa-skype ] Skype support
+						li: a(href="#").footer__vk #[i.fa.fa-vk ] Vk page
+
 
