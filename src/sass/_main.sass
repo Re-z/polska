@@ -100,6 +100,7 @@ $borRa: 7px
 		border: 2px solid $primColor
 		text-decoration: none
 		border-radius: $borRa
+		background: white
 		&:hover
 			background: $primColor
 			color: white
@@ -156,6 +157,7 @@ $borRa: 7px
 	//border-color: $primColor
 	h4
 		text-align: center
+		color: $primColor
 	input,textarea
 		height: 50px
 		line-height: 50px
@@ -177,9 +179,45 @@ $borRa: 7px
 		line-height: 1.2
 		min-height: 100px
 		margin-bottom: 25px
+.steps
+	+clr()
+	margin-top: 30px
+	h3
+		margin-bottom: 15px
+	&__item
+		width: 250px
+		border: 2px solid $primColor
+		padding: 10px 20px 20px 20px
+		text-align: center
+		position: relative
+		margin-right: 40px
+		float: left
+		&:after
+			display: block
+			content: ''
+			font-size: 20px
+			color: $primColor
+		&:last-of-type
+			float: right
+		p
+			text-align: left
+	&__icon.fa
+		font-size: 60px
+		color: $primColor
+		margin-bottom: 15px
+	&__icon-after.fa
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: -30px
+		font-size: 20px
+		color: $primColor
+
+
+
 
 .recalls
-	margin-top: 40px
+	margin-top: 30px
 	padding-bottom: 50px
 	&__slider
 		margin-top: 15px
@@ -215,7 +253,7 @@ $borRa: 7px
 				background: $primColor
 .footer
 	//height: 300px //
-	background: black
+	background: $primColor
 	min-width: 1180px //
 	& .inner
 		padding-top: 25px
@@ -244,7 +282,8 @@ $borRa: 7px
 			color: white
 			font-size: 16px
 			&:hover
-				color: $primColor
+				text-decoration: underline
+
 	&__links-study
 		margin-left: 50px
 	&__contacts
@@ -257,9 +296,20 @@ $borRa: 7px
 			text-decoration: none
 			i
 				margin-right: 15px
-				color: $primColor
+				//color: $primColor
 				font-size: 25px
 			a
 				color: inherit
 				text-decoration: none
-
+.license
+	text-align: center
+	&__img
+		display: inline-block
+		margin: 20px 70px 0 70px
+		width: 300px
+		height: 400px
+		z-index: 10
+		position: relative
+		box-shadow: 2px 3px 10px black
+		&:hover
+			transform: scale(2)

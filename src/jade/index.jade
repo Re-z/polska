@@ -33,16 +33,34 @@ block content
 					p Lorem ipsum dolor sit #[strong amet, consectetur adipisicing elit. Laborum amet, consectetur adipisicing elit. Laborum  ]amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
-				.forms
-					mixin form(text)
-						form
-							h4=text
-							input(type='text' placeholder="Ваше имя")
-							input(type='number' placeholder="Ваше номер телефона")
-							textarea(placeholder="Ваше сообщение")
-							button.btn.btn_center(type=submit) Закзать консультацию
-					+form('Трудоустройство')
-					+form('Обучение')
+
+				.license
+					img.license__img(src="img/license.jpeg")
+					img.license__img(src="img/license-2.jpeg")
+
+
+				.steps
+					h3 Этапы работы
+					.steps__item
+						i.fa.fa-phone-square.steps__icon
+						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+						i.steps__icon-after.fa.fa-chevron-right
+					.steps__item
+						i.fa.fa-address-card.steps__icon
+						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+						i.steps__icon-after.fa.fa-chevron-right
+
+					.steps__item
+						i.fa.fa-file-text-o.steps__icon
+						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+						i.steps__icon-after.fa.fa-chevron-right
+
+					.steps__item
+						i.fa.fa-handshake-o.steps__icon
+						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+
+
+
 				.recalls
 					h3 Отзывы
 					.recalls__slider
@@ -74,6 +92,19 @@ block content
 							.recalls__text-wrap
 								p p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum perspiciatis, eveniet omnis asperiores dolor iusto, est sed deserunt culpa officiis animi beatae, impedit eos, sequi saepe nemo nam. Blanditiis tenetur illo, iure recusandae omnis. Repellendus aspernatur nostrum, perspiciatis, ipsa totam tenetur quidem atque nihil! Quam delectus officia, commodi quasi error.
 								span Иван, 37 лет, Днепропетровск
+
+
+				.forms
+					mixin form(text)
+						form
+							h4=text
+							input(type='text' placeholder="Ваше имя")
+							input(type='number' placeholder="Ваше номер телефона")
+							textarea(placeholder="Ваше сообщение")
+							button.btn.btn_center(type=submit) Закзать консультацию
+					+form('Трудоустройство')
+					+form('Обучение')
+
 		footer.footer
 			.inner
 				.footer__flag
