@@ -65,15 +65,29 @@ $borRa: 7px
 
 .content
 	padding: 30px 0
+	&_bkg
+		background: url("../img/test-bkg.gif") center center repeat
+		background-size: cover
 	h3
 		font-size: 40px
 		color: $primColor
+		margin-bottom: 15px
 	h4
 		font-size: 30px
 		font-weight: 300
+		//position: relative
+		//&:before
+		//	display: block
+		//	content: ' '
+		//	position: absolute
+		//	left: 0
+		//	bottom: 0
+		//	width: 20px
+		//	background: $primColor
+		//	height: 3px
 	p
 		font-size: 16px
-		margin-top: 15px
+		margin-bottom: 15px
 .about
 	+clr
 	img
@@ -313,3 +327,73 @@ $borRa: 7px
 		box-shadow: 2px 3px 10px black
 		&:hover
 			transform: scale(2)
+
+#map, #map2
+	width: 60%
+	height: 400px
+	margin-bottom: 30px
+	float: left
+	box-shadow: 2px 2px 5px black
+	border: 1px solid black
+.contacts
+	margin-top: 20px
+	+clr
+	&__box
+		width: 40%
+		float: left
+	&__schedule-wrap
+		position: relative
+		font-size: 16px
+
+	&__schedule
+		margin-top: 15px
+		position: relative
+		&:before
+			display: block
+			content: ' '
+			position: absolute
+			top: 0
+			left: 200px
+			width: 20px
+			height: 130px
+			border: 1px solid $primColor
+			border-left-color: transparent
+		&:after
+			@extend .contacts__schedule:before
+			height: 50px
+			border-color: black
+			border-left-color: transparent
+			top: auto
+			bottom: 0
+
+
+	p
+		margin-bottom: 5px
+		position: relative
+		&.has-ico
+			position: relative
+			&:before
+				display: inline-block
+				content: ''
+				vertical-align: middle
+				width: 15px
+				height: 15px
+				background: $primColor
+				margin-right: 10px
+				margin-left: 30px
+			&_black:before
+				background: black
+		&.contacts__schedule-graph
+			position: absolute
+			top: 50px
+			right: 100px
+			color: $primColor
+			font-weight: bold
+			&_black
+				color: black
+				top: 147px
+				right: 110px
+	i
+		font-size: 25px
+		color: $primColor
+		margin-right: 10px

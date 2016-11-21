@@ -1,0 +1,49 @@
+extends _layout
+
+block title
+	title Contacts
+
+block content
+	.out
+		include _header
+		main.content.content_bkg
+			.inner
+				h3 Контакты
+				.contacts
+					.contacts__item
+						.contacts__box
+							h4 Киев
+							p #[i.fa.fa-map-marker] #[strong Адресс: ] ул. Богдана Хмельницкого 52-В
+							p #[i.fa.fa-phone] #[strong Телефон: ] 099 547 79 12
+							p #[i.fa.fa-phone] #[strong Телефон: ] 099 547 79 12
+							.contacts__schedule
+								p.has-ico Понедельник
+								p.has-ico Вторник
+								p.has-ico Среда
+								p.has-ico Четверг
+								p.has-ico Пятница
+								p.has-ico.has-ico_black Субота
+								p.has-ico.has-ico_black Воскресенье
+								p.contacts__schedule-graph 9:00 - 18:00
+								p.contacts__schedule-graph.contacts__schedule-graph_black Выходной
+						#map
+					.contacts__item
+						.contacts__box
+							h4 Варшава
+							p #[i.fa.fa-map-marker] #[strong Адресс: ] ул. Богдана Хмельницкого 52-В
+							p #[i.fa.fa-phone] #[strong Телефон: ] 099 547 79 12
+							p #[i.fa.fa-phone] #[strong Телефон: ] 099 547 79 12
+							.contacts__schedule
+								p.has-ico Понедельник
+								p.has-ico Вторник
+								p.has-ico Среда
+								p.has-ico Четверг
+								p.has-ico Пятница
+								p.has-ico.has-ico_black Субота
+								p.has-ico.has-ico_black Воскресенье
+								p.contacts__schedule-graph 9:00 - 18:00
+								p.contacts__schedule-graph.contacts__schedule-graph_black Выходной
+						#map2
+
+		include _footer
+	script(src="http://maps.googleapis.com/maps/api/js")
