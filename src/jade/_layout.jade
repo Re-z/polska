@@ -1,3 +1,10 @@
+mixin form(text)
+  form
+    h4=text
+    input(type='text' placeholder="Ваше имя")
+    input(type='number' placeholder="Ваше номер телефона")
+    textarea(placeholder="Ваше сообщение")
+    button.btn.btn_center(type=submit) Закзать консультацию
 doctype html
 html
   head

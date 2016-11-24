@@ -4,6 +4,9 @@ $shadow: 2px 2px 2px black
 $borRa: 7px
 
 
+
+
+
 .btn
 	height: 50px
 	line-height: 50px
@@ -108,9 +111,10 @@ $borRa: 7px
 		font-size: 16px
 		display: block
 		color: $primColor
-		height: 40px
-		line-height: 40px
-		padding: 0 15px
+		//height: 40px
+		//line-height: 40px
+		line-height: 1
+		padding: 10px 15px
 		border: 2px solid $primColor
 		text-decoration: none
 		border-radius: $borRa
@@ -156,7 +160,7 @@ $borRa: 7px
 		height: 400px //
 		padding: 15px 20px
 		//box-shadow: 1px 1px 7px black
-		box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.6)
+		box-shadow: $shadow
 
 		float: left
 		margin-left: 40px
@@ -164,9 +168,14 @@ $borRa: 7px
 			margin-left: 0
 			margin-right: 40px
 			float: right
-		&:hover
-			transform: scale(1.01)
-			box-shadow: 3px 4px 12px black
+	&_edu
+		margin-top: 50px
+		margin-bottom: 30px
+
+		form:first-of-type, form:last-of-type
+			float: none
+			display: block
+			margin: 0 auto
 
 	//border-color: $primColor
 	h4
@@ -194,18 +203,20 @@ $borRa: 7px
 		min-height: 100px
 		margin-bottom: 25px
 .steps
-	+clr()
 	margin-top: 30px
 	h3
 		margin-bottom: 15px
+	&__items-wrap
+		display: flex
+		justify-content: space-between
+
 	&__item
 		width: 250px
-		border: 2px solid $primColor
 		padding: 10px 20px 20px 20px
 		text-align: center
 		position: relative
-		margin-right: 40px
-		float: left
+		border: 1px solid black
+		box-shadow: $shadow
 		&:after
 			display: block
 			content: ''
@@ -223,8 +234,8 @@ $borRa: 7px
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
-		right: -30px
-		font-size: 20px
+		right: -35px
+		font-size: 25px
 		color: $primColor
 
 
@@ -397,3 +408,37 @@ $borRa: 7px
 		font-size: 25px
 		color: $primColor
 		margin-right: 10px
+
+
+.table-wrap
+	margin: 30px auto
+	table
+		box-shadow: $shadow
+		tr
+			height: 40px
+			text-align: center
+			&:first-of-type
+				background: $primColor
+				color: white
+		td, th
+			font-size: 16px
+			vertical-align: middle
+			border: 1px solid black
+			&:first-of-type
+				width: 50%
+				text-align: left
+			i
+				color: $primColor
+		td
+			&:first-of-type
+				padding-left: 15px
+		th:first-of-type
+			text-align: center
+	strong
+		margin-top: 20px
+		font-size: 20px
+		border-bottom:  2px solid black
+		display: inline-block
+
+
+

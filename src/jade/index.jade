@@ -22,23 +22,24 @@ block content
 
 				.steps
 					h3 Этапы работы
-					.steps__item
-						i.fa.fa-phone-square.steps__icon
-						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
-						i.steps__icon-after.fa.fa-chevron-right
-					.steps__item
-						i.fa.fa-address-card.steps__icon
-						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
-						i.steps__icon-after.fa.fa-chevron-right
+					.steps__items-wrap
+						.steps__item
+							i.fa.fa-phone-square.steps__icon
+							p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+							i.steps__icon-after.fa.fa-chevron-right
+						.steps__item
+							i.fa.fa-address-card.steps__icon
+							p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+							i.steps__icon-after.fa.fa-chevron-right
 
-					.steps__item
-						i.fa.fa-file-text-o.steps__icon
-						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
-						i.steps__icon-after.fa.fa-chevron-right
+						.steps__item
+							i.fa.fa-file-text-o.steps__icon
+							p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+							i.steps__icon-after.fa.fa-chevron-right
 
-					.steps__item
-						i.fa.fa-handshake-o.steps__icon
-						p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+						.steps__item
+							i.fa.fa-handshake-o.steps__icon
+							p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
 
 
 
@@ -76,13 +77,7 @@ block content
 
 
 				.forms
-					mixin form(text)
-						form
-							h4=text
-							input(type='text' placeholder="Ваше имя")
-							input(type='number' placeholder="Ваше номер телефона")
-							textarea(placeholder="Ваше сообщение")
-							button.btn.btn_center(type=submit) Закзать консультацию
+
 					+form('Трудоустройство')
 					+form('Обучение')
 
