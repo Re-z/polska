@@ -1,0 +1,47 @@
+extends _layout
+
+block title
+	title Курсы польского
+
+block content
+	.out
+		include _header
+		main.content
+			.inner
+				h3 Курсы польского
+				.courses
+					+hint
+					.courses__item
+						img(src="img/lang-1.jpg")
+						h4 Курсы польского A1-A2
+						p А1 (Poziom elementarny / Elementary) – #[span 2500 грн ]
+						p А2 (Poziom wstępny / Pre-Intermediate) – #[span 2700 грн ]
+						b Длительность одного занятия – 1 час 40 минут.
+					.courses__item.courses__item_reverse
+						img(src="img/lang-2.jpg")
+						h4 Курсы польского B1-B2
+						p В1 (Poziom progowy / Intermediate) – #[span 3000 грн ]
+						p В2 (Poziom średni ogólny / Upper-Intermediate) – #[span 3500 грн ]
+						b Длительность одного занятия – 1 час 40 минут.
+
+					.courses__item
+						img(src="img/lang-3.jpg")
+						h4 Курсы польского C1-C2
+						p В1 (Poziom progowy / Intermediate) – #[span 3000 грн ]
+						p В2 (Poziom średni ogólny / Upper-Intermediate) – #[span 3500 грн ]
+						b Длительность одного занятия – 1 час 40 минут.
+
+					.courses__item.courses__item_reverse
+						img(src="img/lang-4.jpg")
+						h4 Курсы польского для детей
+						p #[strong Курс польского языка для детей] — это весёлое и непринужденное изучение польского языка для вашего ребёнка. Занятия проходят в игровой форме. Комфортный ритм – два раза в неделю,  позволят детям запомнить выученный материал и с удовольствием прийти на следующее занятие.
+						p Стоимость ежемесячного абонимента – #[span 600 грн]
+						b Длительность одного занятия – 60 минут.
+				.forms.forms_edu
+					+form('Курсы польского')
+
+
+
+
+
+		include _footer

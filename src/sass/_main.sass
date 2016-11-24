@@ -145,7 +145,7 @@ $borRa: 7px
 		padding: 10px 0
 		display: none
 		&_wide
-			width: 150%
+			width: 190%
 		a
 			@extend .nav__link
 			margin-top: 10px
@@ -414,6 +414,7 @@ $borRa: 7px
 	margin: 30px auto
 	table
 		box-shadow: $shadow
+		margin-bottom: 40px
 		tr
 			height: 40px
 			text-align: center
@@ -434,11 +435,52 @@ $borRa: 7px
 				padding-left: 15px
 		th:first-of-type
 			text-align: center
-	strong
-		margin-top: 20px
-		font-size: 20px
-		border-bottom:  2px solid black
-		display: inline-block
+.hint
+	font-size: 20px
+	border-bottom:  1px solid black
+	display: inline-block
+	font-style: italic
 
 
 
+.courses
+	&__item
+		margin-top: 25px
+		margin-bottom: 25px
+		border: 1px solid black
+		background: white
+		//padding: 5px 10px 10px 10px
+		box-shadow: $shadow
+		+clr
+
+		img
+			float: left
+			margin-right: 20px
+			height: 260px
+			width: 450px
+
+		p
+			margin-bottom: 0
+			font-size: 20px
+		span
+			color: $primColor
+		b
+			display: block
+			margin-top: 15px
+			text-decoration: underline
+			font-size: 18px
+		&_reverse
+			img
+				float: right
+				margin-right: 0
+				margin-left: 20px
+			p
+				text-align: right
+			h4
+				text-align: right
+			b
+				text-align: right
+
+	h4
+		font-size: 30px
+		font-weight: 300
