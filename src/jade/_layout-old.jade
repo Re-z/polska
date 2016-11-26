@@ -1,0 +1,53 @@
+mixin form(text)
+  form
+    h4=text
+    input(type='text' placeholder="Ваше имя")
+    input(type='number' placeholder="Ваше номер телефона")
+    textarea(placeholder="Ваше сообщение")
+    button.btn.btn_center(type=submit) Закзать консультацию
+mixin hint(text)
+  .hint
+    strong.hint=text
+
+mixin workSteps
+  .steps
+    h3 Этапы работы
+    .steps__items-wrap
+      .steps__item
+        i.fa.fa-phone-square.steps__icon
+        p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+        i.steps__icon-after.fa.fa-chevron-right
+      .steps__item
+        i.fa.fa-address-card.steps__icon
+        p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+        i.steps__icon-after.fa.fa-chevron-right
+
+      .steps__item
+        i.fa.fa-file-text-o.steps__icon
+        p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+        i.steps__icon-after.fa.fa-chevron-right
+
+      .steps__item
+        i.fa.fa-handshake-o.steps__icon
+        p lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem lorem lorem loremvv v vlorem lorem lorem lorem lorem lorem lorem
+
+
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    block title
+      title Jade Layout Template
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="format-detection" content="telephone=no")
+    link(rel="stylesheet" media="all" href="css/style.css")
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+  body
+    //BEGIN out
+    .out
+      block content
+    script(src="js/app.js" async)
+
+
+    //END out

@@ -534,3 +534,54 @@ a.nav__link:active
 				position: absolute
 				left: 0
 				top: 10px
+.vacancies
+	margin-bottom: 30px
+	&__links
+		text-align: justify
+		a
+			@extend .nav__link
+			display: inline-block
+			margin-right: 10px
+			margin-bottom: 7px
+			//font-size: 16px
+			//padding: 5px 10px
+			//border-radius: 7px
+			//display: inline-block
+			//margin-right: 10px
+			//margin-bottom: 7px
+			//text-decoration: none
+			//background: white
+			//border: 2px solid $primColor
+			//color: $primColor
+			//&:hover
+			//	background: $primColor
+			//	color: white
+	&__box
+		margin-top: 30px
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+
+	&__item
+		width: 32%
+		border: 1px solid black
+		box-shadow: $shadow
+		margin-bottom: 15px
+		img
+			display: block
+			max-width: 100%
+			width: 100%
+			max-height: 245px
+		span
+			font-size: 25px
+			color: $primColor
+			font-weight: bold
+			display: block
+			margin-bottom: 10px
+		p
+			margin-bottom: 5px
+	&__in
+		padding: 10px
+
+
+
