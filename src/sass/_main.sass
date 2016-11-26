@@ -26,7 +26,7 @@ $borRa: 7px
 		transform: scale(.95)
 
 *
-	transition: all .5s
+	transition: all .25s
 
 .inner
 	width: 1180px
@@ -107,6 +107,7 @@ $borRa: 7px
 		&:last-of-type
 			margin-right: 0
 
+
 	&__link
 		font-size: 16px
 		display: block
@@ -122,8 +123,7 @@ $borRa: 7px
 		&:hover
 			background: $primColor
 			color: white
-		&:active
-			transform: scale(.93)
+
 	&__holder
 		@extend .nav__link
 		position: relative
@@ -150,6 +150,8 @@ $borRa: 7px
 			@extend .nav__link
 			margin-top: 10px
 			text-align: center
+a.nav__link:active
+	transform: scale(.93)
 .forms
 	margin-top: 40px
 	+clr
@@ -168,7 +170,7 @@ $borRa: 7px
 			margin-left: 0
 			margin-right: 40px
 			float: right
-	&_edu
+	&_edu, &_work
 		margin-top: 50px
 		margin-bottom: 30px
 
@@ -212,7 +214,7 @@ $borRa: 7px
 
 	&__item
 		width: 250px
-		padding: 10px 20px 20px 20px
+		padding: 20px 20px 20px 20px
 		text-align: center
 		position: relative
 		border: 1px solid black
@@ -333,11 +335,13 @@ $borRa: 7px
 		margin: 20px 70px 0 70px
 		width: 300px
 		height: 400px
-		z-index: 10
 		position: relative
 		box-shadow: 2px 3px 10px black
+		transition: 1s
+		z-index: 9
 		&:hover
 			transform: scale(2)
+			z-index: 10
 
 #map, #map2
 	width: 60%
@@ -410,9 +414,9 @@ $borRa: 7px
 		margin-right: 10px
 
 
-.table-wrap
+.table-entrance-wrap
 	margin: 30px auto
-	table
+	table.table
 		box-shadow: $shadow
 		margin-bottom: 40px
 		tr
@@ -484,3 +488,49 @@ $borRa: 7px
 	h4
 		font-size: 30px
 		font-weight: 300
+
+
+.services
+	margin: 30px 0
+	display: flex
+	justify-content: space-between
+	&__item
+
+		border: 1px solid black
+		box-shadow: $shadow
+		width: 31%
+	&__top
+		padding-top: 5px
+		padding-bottom: 20px
+		border-bottom: 1px solid black
+		text-align: center
+		background: $primColor
+		color: white
+		p
+			font-size: 30px
+			font-weight: bold
+			margin-bottom: 0
+		strong
+			display: block
+			font-size: 25px
+		span
+			font-size: 20px
+	&__bottom
+		padding: 15px 15px 0 15px
+
+		p
+			font-size: 20px
+			vertical-align: middle
+			padding-left: 30px
+			position: relative
+			&:before
+				display: inline-block
+				content: ''
+				vertical-align: middle
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background: $primColor
+				position: absolute
+				left: 0
+				top: 10px
