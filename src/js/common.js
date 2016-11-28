@@ -55,7 +55,7 @@ initMapSec();
 //feedback script
     document.getElementById('feedback').onsubmit = function(){
         var http = new XMLHttpRequest();
-        http.open("POST", "contacts.php", true);
+        http.open("POST", "contacts2.php", true);
         http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         http.send("nameFF=" + this.nameFF.value + "&contactFF=" + this.contactFF.value + "&messageFF=" + this.messageFF.value);
         http.onreadystatechange = function() {
