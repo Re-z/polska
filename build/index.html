@@ -21,6 +21,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <!--meta(name='theme-color', content='#ffffff')-->
+    <script src="js/app.js" async></script>
   </head>
   <body>
     <div class="out">
@@ -106,7 +107,13 @@
                 <textarea placeholder="Ваше сообщение" name="messageFF"></textarea>
                 <input type="submit" value="Закзать консультацию"/>
               </form>
-              <!--+form('Обучение')-->
+              <form method="post" action="contacts.php" id="feedback">
+                <h4>Обучение</h4>
+                <input type="text" placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required="required"/>
+                <input type="email" required="required" name="contactFF" placeholder="Ваше номер телефона"/>
+                <textarea placeholder="Ваше сообщение" name="messageFF"></textarea>
+                <input type="submit" value="Закзать консультацию"/>
+              </form>
             </div>
           </div>
         </main>
@@ -144,6 +151,5 @@
         <!--end footer-->
       </div>
     </div>
-    <script src="js/app.js" async></script>
   </body>
 </html>
