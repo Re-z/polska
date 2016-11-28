@@ -91,7 +91,6 @@ initMapSec();
             alert('Извините, данные не передано');
         };
         return false;
-
     }
 
 });
