@@ -3,8 +3,9 @@ $secColor: white
 $shadow: 2px 2px 2px black
 $borRa: 7px
 
-
-
+=roundedCorner
+	border-radius: 7px
+	overflow: hidden
 
 
 .btn
@@ -219,6 +220,8 @@ a.nav__link:active
 		position: relative
 		border: 1px solid black
 		box-shadow: $shadow
+		border-radius: 7px
+
 		&:after
 			display: block
 			content: ''
@@ -227,7 +230,7 @@ a.nav__link:active
 		&:last-of-type
 			float: right
 		p
-			text-align: left
+			text-align: center
 	&__icon.fa
 		font-size: 60px
 		color: $primColor
@@ -350,6 +353,7 @@ a.nav__link:active
 	float: left
 	box-shadow: 2px 2px 5px black
 	border: 1px solid black
+	+roundedCorner
 .contacts
 	margin-top: 20px
 	+clr
@@ -449,6 +453,7 @@ a.nav__link:active
 
 .courses
 	&__item
+		+roundedCorner
 		margin-top: 25px
 		margin-bottom: 25px
 		border: 1px solid black
@@ -495,12 +500,12 @@ a.nav__link:active
 	display: flex
 	justify-content: space-between
 	&__item
-
+		+roundedCorner
 		border: 1px solid black
 		box-shadow: $shadow
 		width: 31%
 	&__top
-		padding-top: 5px
+		padding-top: 10px
 		padding-bottom: 20px
 		border-bottom: 1px solid black
 		text-align: center
@@ -543,19 +548,6 @@ a.nav__link:active
 			display: inline-block
 			margin-right: 10px
 			margin-bottom: 7px
-			//font-size: 16px
-			//padding: 5px 10px
-			//border-radius: 7px
-			//display: inline-block
-			//margin-right: 10px
-			//margin-bottom: 7px
-			//text-decoration: none
-			//background: white
-			//border: 2px solid $primColor
-			//color: $primColor
-			//&:hover
-			//	background: $primColor
-			//	color: white
 	&__box
 		margin-top: 30px
 		display: flex
@@ -567,6 +559,7 @@ a.nav__link:active
 		border: 1px solid black
 		box-shadow: $shadow
 		margin-bottom: 15px
+		+roundedCorner
 		img
 			display: block
 			max-width: 100%

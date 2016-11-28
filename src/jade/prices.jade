@@ -1,0 +1,18 @@
+extends _layout
+
+block title
+	title Стоимость
+
+block content
+	.out
+		include _header
+		main.content
+			.inner
+				h3 Услуги по трудоустройству
+				+services
+
+				h3 Поступление в ВУЗ
+				+tableEntrance
+
+
+		include _footer

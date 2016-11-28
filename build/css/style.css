@@ -123,10 +123,10 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 .steps { margin-top: 30px; }
 .steps h3 { margin-bottom: 15px; }
 .steps__items-wrap { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-.steps__item { width: 250px; padding: 20px 20px 20px 20px; text-align: center; position: relative; border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; }
+.steps__item { width: 250px; padding: 20px 20px 20px 20px; text-align: center; position: relative; border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; border-radius: 7px; }
 .steps__item:after { display: block; content: ""; font-size: 20px; color: #D1141B; }
 .steps__item:last-of-type { float: right; }
-.steps__item p { text-align: left; }
+.steps__item p { text-align: center; }
 .steps__icon.fa { font-size: 60px; color: #D1141B; margin-bottom: 15px; }
 .steps__icon-after.fa { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: -35px; font-size: 25px; color: #D1141B; }
 
@@ -160,7 +160,7 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 .license__img { display: inline-block; margin: 20px 70px 0 70px; width: 300px; height: 400px; position: relative; -webkit-box-shadow: 2px 3px 10px black; box-shadow: 2px 3px 10px black; -webkit-transition: 1s; transition: 1s; z-index: 9; }
 .license__img:hover { -webkit-transform: scale(2); -ms-transform: scale(2); transform: scale(2); z-index: 10; }
 
-#map, #map2 { width: 60%; height: 400px; margin-bottom: 30px; float: left; -webkit-box-shadow: 2px 2px 5px black; box-shadow: 2px 2px 5px black; border: 1px solid black; }
+#map, #map2 { width: 60%; height: 400px; margin-bottom: 30px; float: left; -webkit-box-shadow: 2px 2px 5px black; box-shadow: 2px 2px 5px black; border: 1px solid black; border-radius: 7px; overflow: hidden; }
 
 .contacts { margin-top: 20px; *zoom: 1; }
 .contacts:after { content: " "; display: table; clear: both; }
@@ -189,7 +189,7 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 
 .hint { font-size: 20px; border-bottom: 1px solid black; display: inline-block; font-style: italic; }
 
-.courses__item { margin-top: 25px; margin-bottom: 25px; border: 1px solid black; background: white; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; *zoom: 1; }
+.courses__item { border-radius: 7px; overflow: hidden; margin-top: 25px; margin-bottom: 25px; border: 1px solid black; background: white; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; *zoom: 1; }
 .courses__item:after { content: " "; display: table; clear: both; }
 .courses__item img { float: left; margin-right: 20px; height: 260px; width: 450px; }
 .courses__item p { margin-bottom: 0; font-size: 20px; }
@@ -202,8 +202,8 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 .courses h4 { font-size: 30px; font-weight: 300; }
 
 .services { margin: 30px 0; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
-.services__item { border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; width: 31%; }
-.services__top { padding-top: 5px; padding-bottom: 20px; border-bottom: 1px solid black; text-align: center; background: #D1141B; color: white; }
+.services__item { border-radius: 7px; overflow: hidden; border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; width: 31%; }
+.services__top { padding-top: 10px; padding-bottom: 20px; border-bottom: 1px solid black; text-align: center; background: #D1141B; color: white; }
 .services__top p { font-size: 30px; font-weight: bold; margin-bottom: 0; }
 .services__top strong { display: block; font-size: 25px; }
 .services__top span { font-size: 20px; }
@@ -215,7 +215,7 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 .vacancies__links { text-align: justify; }
 .vacancies__links a { display: inline-block; margin-right: 10px; margin-bottom: 7px; }
 .vacancies__box { margin-top: 30px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-.vacancies__item { width: 32%; border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; margin-bottom: 15px; }
+.vacancies__item { width: 32%; border: 1px solid black; -webkit-box-shadow: 2px 2px 2px black; box-shadow: 2px 2px 2px black; margin-bottom: 15px; border-radius: 7px; overflow: hidden; }
 .vacancies__item img { display: block; max-width: 100%; width: 100%; max-height: 245px; }
 .vacancies__item span { font-size: 25px; color: #D1141B; font-weight: bold; display: block; margin-bottom: 10px; }
 .vacancies__item p { margin-bottom: 5px; }
