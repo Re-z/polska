@@ -1,5 +1,5 @@
 mixin form(text)
-	form(id="feedback" method="post" action="contacts.php")
+	form(method="post" action="contacts.php" id="feedback")
 		h4=text
 		input(type='text' placeholder="Ваше имя" name="nameFF")
 		input(type='number' required name="contactFF" placeholder="Ваше номер телефона")
