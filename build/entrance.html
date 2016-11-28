@@ -140,19 +140,12 @@
               </div>
             </div>
             <div class="forms forms_edu">
-              <!--form(method="post" action="contacts.php" id="feedback")-->
-              <!--	h4=text-->
-              <!--	input(type='text' placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required)-->
-              <!--	input(type='email' required name="contactFF" placeholder="Ваше номер телефона")-->
-              <!--	textarea(placeholder="Ваше сообщение" name="messageFF")-->
-              <!--	input(type="submit" value="Закзать консультацию")--><form id="feedback" class="feedback__form" method="post" action="contacts.php">
-              <div class="feedback__close" role="button"></div>
-              <h6 class="feedback__title">Тут ви можете написати своє побажання, скаргу, пропозицію по співробітництву, або замовити зворотній дзвінок</h6>
-              <input class="feedback__input-text" type="text" placeholder="Ваше ім'я" required name="nameFF" x-autocompletetype="name" />
-              <input class="feedback__input-text" type="email" placeholder="Ваша електронна пошта" required name="contactFF" x-autocompletetype="email"/>
-              <input class="feedback__input-text" type="text" placeholder="Ваш номер телефону"/>
-              <textarea class="feedback__textarea" placeholder="Ми вас уважно слухаємо :)" cols="30" rows="4" name="messageFF" required></textarea>
-              <input  class="feedback__submit" type="submit" value=""/>
+              <form method="post" action="contacts.php" id="feedback">
+                <h4>Обучение</h4>
+                <input type="text" placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required="required"/>
+                <input type="email" required="required" name="contactFF" placeholder="Ваше номер телефона"/>
+                <textarea placeholder="Ваше сообщение" name="messageFF"></textarea>
+                <input type="submit" value="Закзать консультацию"/>
               </form>
             </div>
           </div>
