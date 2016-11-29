@@ -184,6 +184,8 @@ a.nav__link:active, a.nav__holder:active, .nav__box a:active, .vacancies__links 
 .table-entrance-wrap table.table td, .table-entrance-wrap table.table th { font-size: 16px; vertical-align: middle; border: 1px solid black; }
 .table-entrance-wrap table.table td:first-of-type, .table-entrance-wrap table.table th:first-of-type { width: 50%; text-align: left; }
 .table-entrance-wrap table.table td i, .table-entrance-wrap table.table th i { color: #D1141B; }
+.table-entrance-wrap table.table td i.fa-times-circle, .table-entrance-wrap table.table th i.fa-times-circle { color: black; }
+.table-entrance-wrap table.table td p, .table-entrance-wrap table.table th p { margin-bottom: 0; }
 .table-entrance-wrap table.table td:first-of-type { padding-left: 15px; }
 .table-entrance-wrap table.table th:first-of-type { text-align: center; }
 
