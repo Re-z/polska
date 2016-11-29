@@ -1,5 +1,5 @@
-mixin form(text)
-	form(method="post" action="contacts2.php" id="feedback")
+mixin form(text, idname)
+	form(method="post" action="contacts2.php" id=idname)
 		h4=text
 		input(type='text' placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required)
 		input(type='number' required name="contactFF" placeholder="Ваш номер телефона")
@@ -45,10 +45,10 @@ mixin tableEntrance
 					p 370 евро
 				th
 					p Пакет "Silver"
-					p 370 евро
+					p 420 евро
 				th
 					p Пакет "Gold"
-					p 370 евро
+					p 480 евро
 			tr
 				td Помощь при выборе ВУЗа по специальности
 				td: i.fa.fa-check-circle
@@ -97,7 +97,7 @@ mixin tableEntrance
 			tr
 				td Сопровождение в течение первого года обучения
 				td: i.fa.fa-times-circle
-				td: i.fa.fa-times-circle
+				td: i.fa.fa-check-circle
 				td: i.fa.fa-check-circle
 			tr
 				td Бронирование места в частном общежитии
@@ -212,3 +212,4 @@ html
 		.out
 			block content
 		script(src="js/app.js" async)
+
