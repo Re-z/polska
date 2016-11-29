@@ -1,9 +1,8 @@
 mixin form(text)
 	form(method="post" action="contacts2.php" id="feedback")
-
 		h4=text
 		input(type='text' placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required)
-		input(type='email' required name="contactFF" placeholder="Ваше номер телефона")
+		input(type='number' required name="contactFF" placeholder="Ваш номер телефона")
 		textarea(placeholder="Ваше сообщение" name="messageFF")
 		button.btn.btn_center(type="submit") Закзать консультацию
 
