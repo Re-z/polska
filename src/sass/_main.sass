@@ -6,6 +6,7 @@ $borRa: 7px
 $desc: 1200
 $tab: 1024
 $mob: 768
+$smallMob: 500
 
 =roundedCorner
 	border-radius: 7px
@@ -535,19 +536,38 @@ a.nav__link:active
 	box-shadow: 2px 2px 5px black
 	border: 1px solid black
 	+roundedCorner
+	+r($mob)
+		width: 80%
+		margin: 0 auto
+		float: none
+		height: 300px
+	+r($smallMob)
+		width: 100%
+
 .contacts
 	margin-top: 20px
-	+clr
+	&__item
+		+clr
+		margin-bottom: 20px
 	&__box
 		width: 40%
 		float: left
+		+r($mob)
+			width: 100%
+			float: none
+			margin: 0 auto
+			text-align: center
+			margin-bottom: 20px
 	&__schedule-wrap
 		position: relative
 		font-size: 16px
 
+
 	&__schedule
 		margin-top: 15px
 		position: relative
+		+r($desc)
+			display: none
 		&:before
 			display: block
 			content: ' '
@@ -610,13 +630,19 @@ a.nav__link:active
 			&:first-of-type
 				background: $primColor
 				color: white
+			+r($mob)
+				height: 30px
 		td, th
 			font-size: 16px
 			vertical-align: middle
 			border: 1px solid black
+			+r($mob)
+				font-size: 14px
 			&:first-of-type
 				width: 50%
 				text-align: left
+				+r($mob)
+					width: 30%
 			i
 				color: $primColor
 				&.fa-times-circle
@@ -626,6 +652,8 @@ a.nav__link:active
 		td
 			&:first-of-type
 				padding-left: 15px
+				+r($mob)
+					padding: 0 5px
 		th:first-of-type
 			text-align: center
 .hint
@@ -633,10 +661,14 @@ a.nav__link:active
 	border-bottom:  1px solid black
 	display: inline-block
 	font-style: italic
+	+r($mob)
+		text-align: center
 
 
 
 .courses
+	+r($mob)
+		text-align: center
 	&__item
 		+roundedCorner
 		margin-top: 25px
@@ -646,16 +678,28 @@ a.nav__link:active
 		//padding: 5px 10px 10px 10px
 		box-shadow: $shadow
 		+clr
-
+		+r($mob)
+			width: 100%
+			max-width: 500px
+			margin: 20px auto 20px auto
+			padding: 0 0 20px 0
+			text-align: center
 		img
 			float: left
 			margin-right: 20px
 			height: 260px
 			width: 450px
+			display: block
+			+r($mob)
+				width: 100%
+				margin: 0 0 10px 0
+
 
 		p
 			margin-bottom: 0
 			font-size: 20px
+			+r($mob)
+				padding: 0 10px
 		span
 			color: $primColor
 		b
@@ -663,32 +707,52 @@ a.nav__link:active
 			margin-top: 15px
 			text-decoration: underline
 			font-size: 18px
+			+r($mob)
+				padding: 0 10px
 		&_reverse
+
 			img
 				float: right
 				margin-right: 0
 				margin-left: 20px
 			p
 				text-align: right
+				+r($mob)
+					text-align: center
 			h4
 				text-align: right
+				+r($mob)
+					text-align: center
 			b
 				text-align: right
-
+				+r($mob)
+					text-align: center
 	h4
 		font-size: 30px
 		font-weight: 300
+		+r($tab)
+			font-size: 25px
+		+r($mob)
+			font-size: 20px
 
 
 .services
 	margin: 30px 0
 	display: flex
 	justify-content: space-between
+	+r($mob)
+		flex-wrap: wrap
+		justify-content: space-around
+
 	&__item
 		+roundedCorner
 		border: 1px solid black
 		box-shadow: $shadow
 		width: 31%
+		+r($mob)
+			//width: 85%
+			margin-bottom: 20px
+			width: 250px
 	&__top
 		padding-top: 10px
 		padding-bottom: 20px
@@ -696,15 +760,26 @@ a.nav__link:active
 		text-align: center
 		background: $primColor
 		color: white
+		+r($mob)
+			padding: 10px 0
 		p
 			font-size: 30px
 			font-weight: bold
 			margin-bottom: 0
+			+r($mob)
+				font-size: 20px
+				margin-bottom: 0
 		strong
 			display: block
 			font-size: 25px
+			+r($tab)
+				font-size: 20px
+			+r($mob)
+				font-size: 15px
 		span
 			font-size: 20px
+			+r($mob)
+				font-size: 16px
 	&__bottom
 		padding: 15px 15px 0 15px
 
@@ -724,15 +799,22 @@ a.nav__link:active
 				position: absolute
 				left: 0
 				top: 10px
+				+r($mob)
+					top: 5px
+
 .vacancies
 	margin-bottom: 30px
 	&__links
 		text-align: justify
+		+r($mob)
+			text-align: center
 		a
 			@extend .nav__link
 			display: inline-block
 			margin-right: 10px
 			margin-bottom: 7px
+			+r($mob)
+				padding: 7px 12px
 	&__box
 		margin-top: 30px
 		display: flex
@@ -745,6 +827,13 @@ a.nav__link:active
 		box-shadow: $shadow
 		margin-bottom: 15px
 		+roundedCorner
+		+r($smallMob)
+			width: 100%
+		+r($mob)
+			width: 48%
+
+
+
 		img
 			display: block
 			max-width: 100%
