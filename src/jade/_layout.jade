@@ -1,7 +1,7 @@
 mixin form(text, idname)
 	form(method="post" action="contacts2.php" id=idname)
 		h4=text
-		input(type='text' placeholder="Ваше имя" x-autocompletetype="name" name="nameFF" required)
+		input(type='text' placeholder="Ваше имя" autocomplete="name" name="nameFF" required)
 		input(type='number' required name="contactFF" placeholder="Ваш номер телефона")
 		textarea(placeholder="Ваше сообщение" name="messageFF")
 		button.btn.btn_center(type="submit") Закзать консультацию
@@ -184,7 +184,7 @@ mixin recalls
 
 
 doctype html
-html
+html(lang="ru")
 	head
 		meta(charset="utf-8")
 		block title

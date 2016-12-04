@@ -19,7 +19,7 @@ block content
 					.vacancies__box
 						mixin vacancy(src, title, city, sex, age, exp, duties, schdule, pay, number)
 							.vacancies__item(id=title)
-								img(src="img/vacancies/" + src)
+								img(alt=title src="img/vacancies/" + src )
 								.vacancies__in
 									span=title
 									p

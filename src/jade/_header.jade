@@ -3,6 +3,24 @@ header.header
 	.inner
 		.header__top
 			a.header__logo(href="index.html")
+			.burger
+				span
+				span
+				span
+			ul.nav-mob
+				li.nav-mob__item: a.nav-mob__link(href="index.html") Главная
+				li.nav-mob__holder Трудоустройство
+						ul.nav-mob__box
+							li: a.nav-mob__in-link(href="vacancies.html") Вакансии
+							li: a.nav-mob__in-link(href="services.html") Услуги
+				li.nav-mob__holder  Обучение
+					ul.nav-mob__box
+						li: a.nav-mob__in-link(href="entrance.html") Поступление в ВУЗ
+						li: a.nav-mob__in-link(href="courses.html") Курсы польского
+				li.nav-mob__item: a.nav-mob__link(href="prices.html") Стоимость
+				li.nav-mob__item: a.nav-mob__link(href="contacts.html") Контакты
+				li.nav-mob__close: i.fa.fa-times
+
 			ul.nav
 				li: a.nav__link(href="index.html") Главная
 				li.nav__holder  Трудоустройство

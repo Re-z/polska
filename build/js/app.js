@@ -32,6 +32,17 @@ $(document).ready(function() {
         focusOnSelect: true
     });
 
+    //mob script
+    $('.nav-mob__holder').click(function(){
+        $(this).find('.nav-mob__box').toggle()
+    });
+    $('.burger').click(function(){
+        $('.nav-mob').addClass('is-visible')
+    });
+    $('.nav-mob__close').click(function(){
+        $('.nav-mob').removeClass('is-visible')
+    });
+
     //feedback script
     document.getElementById('feedback').onsubmit = function(){
         var http = new XMLHttpRequest();
